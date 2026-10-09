@@ -290,6 +290,24 @@ DELETE /tasks/:id
 
 Deletes a task after confirmation from the user interface.
 
+## Screenshots
+
+### Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+### Create Task
+
+![Create Task](./screenshots/create-task.png)
+
+### Task List
+
+![Task List](./screenshots/task-list.png)
+
+### Filer Task
+
+![Filter Task](./screenshots/filter-task.png)
+
 ## Assignment Submission
 
 This project was developed as part of the **MERN Candidate Technical Assignment
