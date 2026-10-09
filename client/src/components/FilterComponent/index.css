@@ -1,0 +1,36 @@
+.status-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 220px;
+}
+
+.status-filter__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    border: 1px solid #263247;
+    border-radius: 8px;
+    background: #111827;
+    color: #94a3b8;
+}
+
+.status-filter .ant-select-selector {
+    background: #111827 !important;
+    border-color: #263247 !important;
+    color: #e2e8f0 !important;
+}
+
+@media (max-width: 640px) {
+    .status-filter {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .status-filter .ant-select {
+        flex: 1;
+    }
+}

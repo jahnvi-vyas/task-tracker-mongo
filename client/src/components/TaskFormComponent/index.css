@@ -1,0 +1,78 @@
+.task-form {
+    overflow: hidden;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+    background: linear-gradient(145deg,
+            rgba(15, 23, 42, 0.98),
+            rgba(10, 16, 30, 0.98));
+}
+
+.task-form__header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #263247;
+    background: linear-gradient(135deg,
+            rgba(30, 41, 59, 0.7),
+            rgba(17, 24, 39, 0.95));
+}
+
+.task-form__title {
+    margin: 0;
+    color: #f8fafc;
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.task-form__subtitle {
+    margin: 6px 0 0;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.task-form__body {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px;
+}
+
+.task-form__footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 18px 24px;
+    border-top: 1px solid #263247;
+    background: #0f172a;
+}
+
+.task-form .ant-input,
+.task-form .ant-input-affix-wrapper,
+.task-form .ant-select-selector {
+    background: #0f172a !important;
+    border-color: #334155 !important;
+    color: #e2e8f0 !important;
+}
+
+.task-form .ant-input::placeholder {
+    color: #64748b;
+}
+
+.task-form .ant-select-selection-item {
+    color: #e2e8f0;
+}
+
+.task-form .ant-input:hover,
+.task-form .ant-input:focus,
+.task-form .ant-input-affix-wrapper:hover,
+.task-form .ant-input-affix-wrapper-focused,
+.task-form .ant-select:hover .ant-select-selector {
+    border-color: #60a5fa !important;
+}
+
+@media (max-width: 640px) {
+
+    .task-form__header,
+    .task-form__body,
+    .task-form__footer {
+        padding: 16px;
+    }
+}

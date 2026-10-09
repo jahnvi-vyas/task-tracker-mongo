@@ -1,0 +1,20 @@
+.loading-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 280px;
+    border: 1px solid #263247;
+    border-radius: 16px;
+    background: #111827;
+}
+
+.loading-state .ant-spin-dot-item {
+    background: #60a5fa;
+}
+
+.loading-state__message {
+    color: #94a3b8;
+    font-size: 13px;
+}

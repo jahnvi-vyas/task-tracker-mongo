@@ -1,0 +1,93 @@
+.theme-select {
+    width: 100%;
+}
+
+.theme-select.ant-select-single {
+    height: 40px;
+    background: #0b1220 !important;
+    color: #e2e8f0 !important;
+    border: 1px solid #334155;
+}
+
+.theme-select .ant-select-selector {
+    height: 40px !important;
+    padding: 0 12px !important;
+    border: 1px solid #334155 !important;
+    border-radius: 9px !important;
+    background: #0b1220 !important;
+    box-shadow: none !important;
+    color: #e2e8f0 !important;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.theme-select .ant-select-selection-item {
+    display: flex;
+    align-items: center;
+    color: #e2e8f0 !important;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.theme-select .ant-select-selection-placeholder {
+    color: #64748b !important;
+    font-size: 13px;
+}
+
+.theme-select .ant-select-arrow {
+    color: #64748b !important;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-select:hover .ant-select-selector {
+    border-color: #475569 !important;
+}
+
+.theme-select.ant-select-focused .ant-select-selector {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12) !important;
+}
+
+.theme-select.ant-select-open .ant-select-selector {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12) !important;
+}
+
+.theme-select.ant-select-open .ant-select-arrow {
+    color: #60a5fa !important;
+}
+
+.theme-select-dropdown {
+    padding: 5px !important;
+    border: 1px solid #1e293b !important;
+    border-radius: 10px !important;
+    background: #0f172a !important;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+.theme-select-dropdown .ant-select-item {
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 7px;
+    color: #cbd5e1 !important;
+    font-size: 13px;
+}
+
+.theme-select-dropdown .ant-select-item-option-active {
+    background: rgba(37, 99, 235, 0.12) !important;
+    color: #f8fafc !important;
+}
+
+.theme-select-dropdown .ant-select-item-option-selected {
+    background: rgba(37, 99, 235, 0.18) !important;
+    color: #60a5fa !important;
+    font-weight: 600;
+}
+
+.theme-select-dropdown .ant-select-item-option-selected.ant-select-item-option-active {
+    background: rgba(37, 99, 235, 0.24) !important;
+}

@@ -1,0 +1,126 @@
+.task-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #263247;
+    border-radius: 14px;
+    background: #111827;
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.task-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: #3b82f6;
+}
+
+.task-item:hover {
+    border-color: #3b4d69;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.task-item--completed {
+    opacity: 0.82;
+}
+
+.task-item--completed::before {
+    background: #22c55e;
+}
+
+.task-item__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 20px 20px 24px;
+}
+
+.task-item__main {
+    min-width: 0;
+    flex: 1;
+}
+
+.task-item__heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.task-item__title {
+    margin: 0;
+    color: #f8fafc;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.task-item--completed .task-item__title {
+    color: #94a3b8;
+    text-decoration: line-through;
+}
+
+.task-item__description {
+    margin: 8px 0 0;
+    color: #94a3b8;
+    font-size: 13px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.task-item__meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.task-item__dot {
+    color: #475569;
+}
+
+.task-item__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.task-item__actions .ant-select {
+    min-width: 130px;
+}
+
+.task-item__actions .ant-select-selector {
+    background: #0f172a !important;
+    border-color: #334155 !important;
+    color: #e2e8f0 !important;
+}
+
+@media (max-width: 640px) {
+    .task-item__content {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .task-item__actions {
+        width: 100%;
+    }
+
+    .task-item__actions .ant-select {
+        flex: 1;
+        min-width: 0;
+        width: 100%;
+    }
+}

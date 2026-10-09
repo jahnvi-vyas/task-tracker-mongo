@@ -1,0 +1,44 @@
+.error-message {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    border-radius: 14px;
+    background: rgba(127, 29, 29, 0.08);
+}
+
+.error-message .ant-alert {
+    width: 100%;
+    border: 0;
+    background: transparent;
+}
+
+.error-message .ant-alert-message {
+    color: #fca5a5;
+}
+
+.error-message .ant-alert-description {
+    color: #94a3b8;
+}
+
+.error-message .ant-btn {
+    border-color: #334155;
+    background: #111827;
+    color: #e2e8f0;
+}
+
+.error-message .ant-btn:hover {
+    border-color: #64748b !important;
+    color: #f8fafc !important;
+}
+
+.ant-alert-section .ant-alert-title {
+    color: #ffffff !important;
+}
+
+.ant-alert-section .ant-alert-description {
+    color: #e5e7eb !important;
+}

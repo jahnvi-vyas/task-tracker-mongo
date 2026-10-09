@@ -1,0 +1,44 @@
+.task-drawer .ant-drawer-mask {
+    background: rgba(2, 6, 23, 0.72);
+    backdrop-filter: blur(4px);
+}
+
+.task-drawer .ant-drawer-content-wrapper {
+    box-shadow: -20px 0 50px rgba(0, 0, 0, 0.35);
+}
+
+.task-drawer .ant-drawer-content {
+    background: #080d1a;
+    color: #e2e8f0;
+}
+
+.task-drawer .ant-drawer-header {
+    padding: 20px 24px;
+    background: linear-gradient(145deg,
+            #0f172a,
+            #0b1220);
+    border-bottom: 1px solid #1e293b;
+}
+
+.task-drawer .ant-drawer-title {
+    color: #f8fafc;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.task-drawer .ant-drawer-close {
+    color: #64748b;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.task-drawer .ant-drawer-close:hover {
+    color: #f8fafc;
+    background: rgba(37, 99, 235, 0.12);
+}
+
+.task-drawer .ant-drawer-body {
+    padding: 22px;
+    background: radial-gradient(circle at top right,
+            rgba(37, 99, 235, 0.07),
+            transparent 35%), #080d1a;
+}
