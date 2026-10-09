@@ -2,6 +2,22 @@
     width: 100%;
 }
 
+.theme-select-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+.theme-select-label {
+    display: block;
+    margin: 0;
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
 .theme-select.ant-select-single {
     height: 40px;
     background: #0b1220 !important;

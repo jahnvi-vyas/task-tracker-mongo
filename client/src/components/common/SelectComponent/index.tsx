@@ -12,9 +12,9 @@ const SelectComponent = ({
     ...props
 }: SelectComponentProps) => {
     return (
-        <div className="flex w-full flex-col gap-2">
+        <div className="theme-select-wrapper">
             {label && (
-                <label className="text-sm font-medium text-slate-200">
+                <label className="theme-select-label">
                     {label}
                 </label>
             )}

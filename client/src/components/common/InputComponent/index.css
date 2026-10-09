@@ -1,0 +1,65 @@
+.theme-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #334155 !important;
+    border-radius: 9px !important;
+    background: #0b1220 !important;
+    color: #e2e8f0 !important;
+    box-shadow: none !important;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.theme-input input {
+    background: transparent !important;
+    color: #e2e8f0 !important;
+    font-size: 13px;
+}
+
+.theme-input input::placeholder {
+    color: #64748b !important;
+    opacity: 1;
+}
+
+.theme-input:hover {
+    border-color: #475569 !important;
+}
+
+.theme-input:focus,
+.theme-input:focus-within {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12) !important;
+}
+
+.theme-input:disabled,
+.theme-input.ant-input-disabled {
+    background: #111827 !important;
+    color: #64748b !important;
+    cursor: not-allowed;
+}
+
+.theme-input.ant-input-status-error {
+    border-color: #ef4444 !important;
+}
+
+.theme-input.ant-input-status-error:focus,
+.theme-input.ant-input-status-error:focus-within {
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12) !important;
+}
+
+.theme-input-label {
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.theme-input-error {
+    color: #f87171;
+    font-size: 12px;
+}
+
+.light .theme-input-label {
+    color: #374151;
+}

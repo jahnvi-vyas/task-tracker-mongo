@@ -1,4 +1,5 @@
 import { Input, type InputProps } from "antd";
+import "./index.css";
 
 interface InputComponentProps extends InputProps {
     label?: string;
@@ -8,22 +9,23 @@ interface InputComponentProps extends InputProps {
 const InputComponent = ({
     label,
     error,
+    className,
     ...props
 }: InputComponentProps) => {
     return (
         <div className="flex w-full flex-col gap-2">
             {label && (
-                <label className="text-sm font-medium text-slate-200">
+                <label className="theme-input-label">
                     {label}
                 </label>
             )}
             <Input
                 {...props}
                 status={error ? "error" : props.status}
-                className="!rounded-lg"
+                className={`theme-input ${className ?? ""}`}
             />
             {error && (
-                <span className="text-xs text-red-400">
+                <span className="theme-input-error">
                     {error}
                 </span>
             )}
